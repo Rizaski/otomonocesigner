@@ -4,6 +4,26 @@ A mobile-responsive jersey customization application built with HTML, CSS, and J
 
 ## 🚀 Deployment
 
+### Vercel (Recommended)
+
+1. Install Vercel CLI (optional):
+   ```bash
+   npm i -g vercel
+   ```
+
+2. Deploy via Vercel Dashboard:
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository: `Rizaski/jerseycustomizer`
+   - Vercel will auto-detect the static site
+   - Click **Deploy**
+
+3. Or deploy via CLI:
+   ```bash
+   vercel
+   ```
+
+Your site will be live instantly at: `https://your-project.vercel.app`
+
 ### GitHub Pages
 
 1. Go to your repository settings on GitHub
