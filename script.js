@@ -69,11 +69,17 @@ function initCanvas() {
     // Don't render here - wait for images to load
 }
 
+// Get base path for assets (works with GitHub Pages subdirectory)
+function getBasePath() {
+    return window.basePath || '';
+}
+
 // Load Jersey Images
 async function loadJerseyImages(reload = false) {
+    const base = getBasePath();
     const imagePaths = {
-        front: '/canvas/front_jersey.png',
-        back: '/canvas/back_side.png'
+        front: `${base}/canvas/front_jersey.png`,
+        back: `${base}/canvas/back_side.png`
     };
 
     const loadPromises = [];

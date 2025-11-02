@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otomono Jersey - Customize Your Jersey</title>
-    <link rel="icon" type="image/png" href="/public/favicon.png">
+    <script>
+        // Auto-detect base path for GitHub Pages subdirectory
+        const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
+        window.basePath = basePath;
+    </script>
+    <link rel="icon" type="image/png" href="./public/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -31,7 +36,7 @@
     <!-- Header -->
     <header class="header">
         <div class="header-logo">
-            <img src="/public/logo.png" alt="Otomono Logo" id="headerLogo">
+            <img src="./public/logo.png" alt="Otomono Logo" id="headerLogo">
         </div>
     </header>
 
