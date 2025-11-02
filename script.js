@@ -72,8 +72,8 @@ function initCanvas() {
 // Load Jersey Images
 async function loadJerseyImages(reload = false) {
     const imagePaths = {
-        front: 'canvas/front_jersey.png',
-        back: 'canvas/back_side.png'
+        front: '/canvas/front_jersey.png',
+        back: '/canvas/back_side.png'
     };
 
     const loadPromises = [];
