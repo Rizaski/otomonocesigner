@@ -2,9 +2,7 @@
   "name": "otomonocesigner",
   "version": "1.0.0",
   "description": "Otomono Jersey Customizer - Static Site",
-  "scripts": {
-    "build": "echo 'No build needed'"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
