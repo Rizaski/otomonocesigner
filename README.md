@@ -2,6 +2,19 @@
 
 A mobile-responsive jersey customization application built with HTML, CSS, and JavaScript.
 
+## 🚀 Deployment
+
+### GitHub Pages
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Pages** in the left sidebar
+3. Under **Source**, select **Deploy from a branch**
+4. Choose **master** (or **main**) branch and **/ (root)** folder
+5. Click **Save**
+6. Your site will be available at: `https://rizaski.github.io/jerseycustomizer`
+
+**Note:** After enabling GitHub Pages, it may take a few minutes for the site to be live.
+
 ## Setup Instructions
 
 ### Option 1: Using a Local Web Server (Recommended)
