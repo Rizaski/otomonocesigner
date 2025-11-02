@@ -1,9 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/((?!.*\\..*|canvas|patterns|public|_next|api).*)",
-      "destination": "/index.html"
-    }
-  ]
-}
-
