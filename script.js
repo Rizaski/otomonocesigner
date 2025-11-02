@@ -529,9 +529,10 @@ function generateColorPalette() {
 // Load Pattern Palette
 function loadPatternPalette() {
     // Generate pattern paths for all Canvas patterns (1-27)
+    const base = getBasePath();
     const patterns = [];
     for (let i = 1; i <= 27; i++) {
-        patterns.push(`/patterns/Canvas (${i}).jfif`);
+        patterns.push(`${base}/patterns/Canvas (${i}).jfif`);
     }
 
     const patternGrid = document.getElementById('patternGrid');
