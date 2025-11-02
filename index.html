@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otomono Jersey - Customize Your Jersey</title>
     <script>
-        // Auto-detect base path for GitHub Pages subdirectory
-        const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
+        // Auto-detect base path - works for both GitHub Pages and Vercel
+        const basePath = (() => {
+            const path = window.location.pathname;
+            // For Vercel (root deployment), basePath should be empty
+            // For GitHub Pages subdirectory, extract the repo name
+            if (path.includes('/index.html')) {
+                return path.split('/index.html')[0];
+            }
+            // If we're at root (/), return empty string for Vercel
+            if (path === '/' || path === '') {
+                return '';
+            }
+            // Default: return empty for Vercel root deployments
+            return '';
+        })();
         window.basePath = basePath;
     </script>
-    <link rel="icon" type="image/png" href="./public/favicon.png">
+    <link rel="icon" type="image/png" href="/public/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
@@ -36,7 +49,7 @@
     <!-- Header -->
     <header class="header">
         <div class="header-logo">
-            <img src="./public/logo.png" alt="Otomono Logo" id="headerLogo">
+            <img src="/public/logo.png" alt="Otomono Logo" id="headerLogo">
         </div>
     </header>
 
@@ -272,7 +285,7 @@
         </aside>
     </main>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

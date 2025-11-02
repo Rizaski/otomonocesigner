@@ -69,9 +69,15 @@ function initCanvas() {
     // Don't render here - wait for images to load
 }
 
-// Get base path for assets (works with GitHub Pages subdirectory)
+// Get base path for assets (works with GitHub Pages subdirectory and Vercel)
 function getBasePath() {
-    return window.basePath || '';
+    const base = window.basePath || '';
+    // Ensure base is empty for root deployments (Vercel) or starts with / for subdirectories
+    // Return empty string for root, or ensure it starts with / if not empty
+    if (base === '' || base === '/') {
+        return '';
+    }
+    return base.startsWith('/') ? base : '/' + base;
 }
 
 // Load Jersey Images
